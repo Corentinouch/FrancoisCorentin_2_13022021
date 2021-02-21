@@ -1,0 +1,398 @@
+body {
+    margin: auto;
+    padding: 0;
+    font-family: Raleway-VariableFont_wght;
+}
+
+@font-face {
+    font-family: 'Raleway-VariableFont_wght';
+    src: url('Raleway-VariableFont_wght.ttf') format("truetype");
+    ;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.gray {
+    color: #F2F2F2;
+}
+
+.wrap div img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.wrap div a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 3px solid transparent;
+}
+
+.wrap div a:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+.inscription {
+    color: #0065FC;
+    font-weight: bolder;
+}
+
+.wrap {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 6/8;
+    grid-row: 1;
+}
+
+.three {
+    grid-column: 8/10;
+    grid-row: 1;
+}
+
+.four {
+    grid-column: 10/12;
+    grid-row: 1;
+}
+
+.recherche {
+    margin: auto;
+    width: 95%;
+}
+
+.wrapform {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 7;
+    grid-template-rows: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    grid-auto-rows: minmax(40px, auto);
+    grid-auto-columns: minmax(10%, auto);
+}
+
+.un {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.deux {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+.trois {
+    grid-column: 5/7;
+    grid-row: 1;
+}
+
+.wrapform i {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.wrapform #search {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: large;
+    border: none;
+    outline: none;
+    font-family: Raleway-VariableFont_wght;
+}
+
+.wrapform button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    font-family: Raleway-VariableFont_wght;
+}
+
+.wrapform button:hover {
+    background-color: #0052ce;
+    transition: 0.3s;
+}
+
+.wrapform button:active span {
+    transform: scale(0.95);
+}
+
+.filtre {
+    border: solid red 2px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtre h3 {
+    border: 2px solid green;
+}
+
+.filtre li {
+    border: 2px #F2F2F2 solid;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.filtre li i {
+    padding: 18px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.filtre li i:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
+.filtre li p {
+    color: black;
+    font-weight: bold;
+    padding: 0px 15px 0 15px;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+}
+
+.info p {
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 3fr;
+    gap: 10px 0px;
+    padding: 20px 0 40px 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin: 20px 0 0 0;
+}
+
+.foot1 {
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.foot2 {
+    grid-column: 5/9;
+    grid-row: 1;
+}
+
+.foot3 {
+    grid-column: 9/13;
+    grid-row: 1;
+}
+
+@media (max-width:991px) {
+    .wrap {
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .two {
+        grid-column: 1/6;
+        grid-row: 2;
+    }
+    .three {
+        grid-column: 6/12;
+        grid-row: 2;
+    }
+    .wrap div .bord {
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .wrap div .bord:hover {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        font-weight: bolder;
+    }
+    .wrapform {
+        width: 100%;
+    }
+    footer {
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 10px 0px;
+        padding: 20px 0 40px 0;
+    }
+    .foot1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .foot2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .foot3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+}
+
+.pop {
+    border: 2px green solid;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.acti {
+    border: 2px solid red;
+}
+
+.all-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 100px 60px;
+    grid-template-areas: "image" "text";
+    border-radius: 20px;
+    background-color: rgb(161, 161, 161);
+    border: 5px solid rgb(179, 3, 3);
+    overflow: hidden;
+}
+
+.card-img {
+    grid-area: image;
+}
+
+.cune {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.cdeux {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.ctrois {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.cquatre {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.ccinq {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.csix {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 10px;
+}
+
+.allvertical_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.vertical_card {
+    width: 250px;
+    display: grid;
+    grid-template-columns: 100px 150px;
+    grid-template-rows: 100px;
+    grid-template-areas: "imagevert" "textvert";
+    border-radius: 20px;
+    background-color: rgb(161, 161, 161);
+    border: 5px solid rgb(179, 3, 3);
+    overflow: hidden;
+}
+
+.card_img_vert {
+    grid-area: imagevert;
+}
+
+.card_text_vert {
+    grid-area: textvert;
+}
+
+.csept {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.chuit {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.cneuf {
+    background: url("Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
