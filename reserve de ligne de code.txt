@@ -1,0 +1,12 @@
+reserve de ligne de code
+
+
+<h4>Hôtel de la mer</h4>
+                        <p>Nuit à partir de <span>46€</span></p>
+                        <div>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star gray"></i>
+                            <i class="fas fa-star gray"></i>
+                        </div>
