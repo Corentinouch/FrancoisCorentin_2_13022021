@@ -81,7 +81,7 @@ body {
 }
 
 .wrapform {
-    width: 50%;
+    width: 500px;
     display: grid;
     grid-template-columns: 7;
     grid-template-rows: 1;
@@ -279,120 +279,35 @@ footer ul li {
     }
 }
 
-.pop {
-    border: 2px green solid;
-    width: 100%;
+.hebergement {
+    background-color: gray;
+}
+
+.card1 {
+    border: 4px white solid;
+    background-color: white;
     border-radius: 20px;
-    background-color: #F2F2F2;
-}
-
-.acti {
-    border: 2px solid red;
-}
-
-.all-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.card {
-    width: 250px;
-    display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: 100px 60px;
-    grid-template-areas: "image" "text";
-    border-radius: 20px;
-    background-color: rgb(161, 161, 161);
-    border: 5px solid rgb(179, 3, 3);
     overflow: hidden;
+    display: inline-block;
 }
 
-.card-img {
-    grid-area: image;
-}
-
-.cune {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.cdeux {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.ctrois {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.cquatre {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.ccinq {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.csix {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.card-text {
-    grid-area: text;
-    margin: 10px;
-}
-
-.allvertical_card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-}
-
-.vertical_card {
+.card1 img {
     width: 250px;
-    display: grid;
-    grid-template-columns: 100px 150px;
-    grid-template-rows: 100px;
-    grid-template-areas: "imagevert" "textvert";
-    border-radius: 20px;
-    background-color: rgb(161, 161, 161);
-    border: 5px solid rgb(179, 3, 3);
-    overflow: hidden;
 }
 
-.card_img_vert {
-    grid-area: imagevert;
+.card1 div {
+    margin: 0px 0px 0px 7px;
 }
 
-.card_text_vert {
-    grid-area: textvert;
+.card1 p {
+    margin: 5px 0px;
+    font-size: small;
 }
 
-.csept {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
+.card1 p i {
+    font-size: x-small;
 }
 
-.chuit {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
-}
-
-.cneuf {
-    background: url("Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-size: cover;
-    background-position-y: 60%;
+span {
+    font-weight: bold;
 }
