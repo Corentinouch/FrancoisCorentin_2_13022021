@@ -936,6 +936,9 @@
     .filtre h2 {
         width: 500px;
     }
+    .filtre li {
+        width:100%;
+    }
     .searchbar {
         width: 100%;
     }
