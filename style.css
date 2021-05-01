@@ -970,10 +970,7 @@ height:auto;
      /*HEADER*/
      /*RECHERCHE*/
     .filtre h2 {
-        width: 500px;
-    }
-    .filtre li {
-        width:100%;
+        width: 326px;
     }
     .searchbar {
         width: 100%;
