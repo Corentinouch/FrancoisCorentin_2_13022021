@@ -589,6 +589,7 @@ height:auto;
     #activite h2{
         grid-column: 1/5;
         grid-row: 1;
+        margin-left:10px;
     }
      .actune {
         grid-column: 1;
@@ -1034,33 +1035,36 @@ height:auto;
          grid-column: 1/2;
          grid-row: 1;
      }
+     .conteneur{
+        height:100px;
+    }
      .une {
          grid-column: 1;
          grid-row: 2;
      }
      .une img{
-         object-position: 0px -20px;
+         object-position: 0px -60px;
      }
      .deux {
          grid-column: 1;
          grid-row: 3;
      }
      .deux img{
-        object-position: 0px -25px;
+        object-position: 0px -60px;
     }
      .trois {
          grid-column: 1;
          grid-row: 4;
      }
      .trois img{
-        object-position: 0px -25px;
+        object-position: 0px -60px;
     }
      .quatre {
          grid-column: 1;
          grid-row: 5;
      }
      .quatre img{
-        object-position: 0px -70px;
+        object-position: 0px -100px;
     }
      .cinq {
          grid-column: 1;
@@ -1071,7 +1075,7 @@ height:auto;
          grid-row: 7;
      }
      .six img{
-        object-position: 0px -155px;
+        object-position: 0px -185px;
     }
      .more {
          grid-column: 1;
